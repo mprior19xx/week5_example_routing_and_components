@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Add VUE.JS libraries here -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+    <title>Routing with Vue</title>
+</head>
+
+<!-- START BODY HERE -->
+<body>
+    <main id="app">
+        <!-- `<router-link>` will be rendered as an `<a>` tag by default -->
+        <router-link to="/">Go to Splash</router-link>
+        <router-link to="/app">Go to App</router-link>
+
+        <!-- ROUTE OUTLET *like a HBS tag*-->
+        <!-- Components will be rendered here -->
+        <router-view></router-view>
+
+    </main>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
